@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ARGUDO Tactical & Cyber Security</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ENCABEZADO -->
+<header class="bg-info text-white text-center py-4"><header class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <h1 class="display-5 fw-bold">ARGUDO Tactical & Cyber Security</h1>
+        <nav class="navbar navbar-expand-lg mt-3">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- SECCIÓN PRINCIPAL -->
+<main class="my-5">
+    <div class="container">
+
+        <!-- Carrusel -->
+        <section id="carrusel" class="mb-5">
+            <div id="miCarrusel" class="carousel slide shadow-sm" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="descarga (2).jpg" class="d-block w-100" alt="Seguridad VIP">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="descarga (1).jpg" class="d-block w-100" alt="Equipo Táctico">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="descarga.jpg" class="d-block w-100" alt="Ciberseguridad">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Tabla de Servicios -->
+        <section id="servicios" class="mb-5">
+            <h2 class="text-center mb-4">Nuestros Servicios</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Precio</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Escolta VIP</td>
+                            <td>$150/hora</td>
+                            <td>Protección física personalizada.</td>
+                        </tr>
+                        <tr>
+                            <td>Monitoreo Remoto</td>
+                            <td>$80/mes</td>
+                            <td>Vigilancia inteligente las 24 horas.</td>
+                        </tr>
+                        <tr>
+                            <td>Control Biométrico</td>
+                            <td>$200/instalación</td>
+                            <td>Acceso restringido mediante huella facial o digital.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto" class="mb-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <form id="contactForm" class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                    <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                    <div class="invalid-feedback">Por favor escribe un mensaje.</div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary mt-3 me-2" type="submit">Enviar</button>
+                    <button class="btn btn-secondary mt-3" type="button" onclick="mostrarAlerta()">Más Información</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+</main>
+
+<!-- PIE DE PÁGINA -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-0">&copy; 2025 ARGUDO Tactical & Cyber Security - Guayaquil, Ecuador</p>
+        <p><a href="#" class="text-white text-decoration-none me-3">Política de Privacidad</a>
+           <a href="#" class="text-white text-decoration-none">Redes Sociales</a></p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap @5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JavaScript Personalizado -->
+<script src="script.js"></script>
+</body>
+</html>
